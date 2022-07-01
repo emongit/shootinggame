@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BAG-oD-NrI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="bUg-8c-Xpv">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="BAG-oD-NrI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CtP-pD-ce5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="setumei" translatesAutoresizingMaskIntoConstraints="NO" id="PmV-aW-3mQ">
+                                <rect key="frame" x="142" y="194" width="130" height="100"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上から落ちてくるミュータンス菌を" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IzP-Ad-E7t">
+                                <rect key="frame" x="84.5" y="329" width="245" height="18"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="「タップ」でやっつけろ！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7D-FY-g3I">
+                                <rect key="frame" x="115" y="357" width="184" height="18"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="スマホを傾けると移動できるよ！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDI-KC-Tf6">
+                                <rect key="frame" x="92" y="385" width="230" height="18"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Et-zv-MLY">
+                                <rect key="frame" x="0.0" y="720" width="414" height="72"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="presentation" id="OKK-6Q-OuK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dHz-Ab-ofG"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GDI-KC-Tf6" firstAttribute="top" secondItem="S7D-FY-g3I" secondAttribute="bottom" constant="10" id="4NO-JL-Ihz"/>
+                            <constraint firstItem="IzP-Ad-E7t" firstAttribute="centerX" secondItem="CtP-pD-ce5" secondAttribute="centerX" id="CQ3-pP-miy"/>
+                            <constraint firstItem="S7D-FY-g3I" firstAttribute="centerX" secondItem="CtP-pD-ce5" secondAttribute="centerX" id="Cke-ch-h0j"/>
+                            <constraint firstItem="IzP-Ad-E7t" firstAttribute="top" secondItem="PmV-aW-3mQ" secondAttribute="bottom" constant="35" id="Fvf-sE-kuY"/>
+                            <constraint firstItem="9Et-zv-MLY" firstAttribute="trailing" secondItem="dHz-Ab-ofG" secondAttribute="trailing" id="OWv-Yv-3ur"/>
+                            <constraint firstItem="GDI-KC-Tf6" firstAttribute="centerX" secondItem="CtP-pD-ce5" secondAttribute="centerX" id="PUm-FY-CeP"/>
+                            <constraint firstItem="dHz-Ab-ofG" firstAttribute="bottom" secondItem="9Et-zv-MLY" secondAttribute="bottom" constant="70" id="UfO-0C-xpZ"/>
+                            <constraint firstItem="PmV-aW-3mQ" firstAttribute="top" secondItem="dHz-Ab-ofG" secondAttribute="top" constant="150" id="ai1-Y7-o5f"/>
+                            <constraint firstItem="PmV-aW-3mQ" firstAttribute="centerX" secondItem="CtP-pD-ce5" secondAttribute="centerX" id="rSI-gD-HJX"/>
+                            <constraint firstItem="9Et-zv-MLY" firstAttribute="leading" secondItem="dHz-Ab-ofG" secondAttribute="leading" id="vK3-QK-W65"/>
+                            <constraint firstItem="9Et-zv-MLY" firstAttribute="centerX" secondItem="CtP-pD-ce5" secondAttribute="centerX" id="vbj-O9-zfj"/>
+                            <constraint firstItem="S7D-FY-g3I" firstAttribute="top" secondItem="IzP-Ad-E7t" secondAttribute="bottom" constant="10" id="yBq-sQ-Evo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2a0-CR-eWv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-746.37681159420299" y="61.607142857142854"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="BV1-FR-VrT" customClass="GameViewController" customModule="shooting_game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="tintColor" systemColor="systemPinkColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="62"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" systemColor="systemPinkColor"/>
+    <resources>
+        <image name="setumei" width="130" height="100"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
