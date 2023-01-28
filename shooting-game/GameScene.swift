@@ -113,15 +113,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         scoreLabel = SKLabelNode(text: "Score: 0")
         scoreLabel.fontName = "HGSｺﾞｼｯｸM"
-        scoreLabel.fontSize = 50
-        scoreLabel.position = CGPoint(x: -frame.width / 2 + scoreLabel.frame.width / 2 + 50, y: frame.height / 2 - scoreLabel.frame.height * 5)
+        scoreLabel.fontSize = 45
+        //scoreLabel.position = CGPoint(x: -frame.width / 2 + scoreLabel.frame.width / 2 + 50, y: frame.height / 2 - scoreLabel.frame.height * 5)
+        //↓iPhone13画面に合わせて位置変更
+        scoreLabel.position = CGPoint(x: -50 / 2 + scoreLabel.frame.width / 2 + 50, y: frame.height / 2 - scoreLabel.frame.height * 5)
         addChild(scoreLabel)
 //        ベストスコアの設定
         let bestScore = UserDefaults.standard.integer(forKey: "bestScore")
         let bestScoreLabel = SKLabelNode(text: "Best Score: \(bestScore)")
         bestScoreLabel.fontName = "HGSｺﾞｼｯｸM"
         bestScoreLabel.fontSize = 30
-        bestScoreLabel.position = scoreLabel.position.applying(CGAffineTransform(translationX: 0, y: -bestScoreLabel.frame.height * 1.5))
+        bestScoreLabel.position = scoreLabel.position.applying(CGAffineTransform(translationX: 50, y: -bestScoreLabel.frame.height * 1.5))
         addChild(bestScoreLabel)
         
 //だんだんはやく
